@@ -1,0 +1,6 @@
+<h1> Upload Image and caption </h1>
+
+<% simple_form_for @post do |f| %>
+    <%= f.input :image, as: :file %>
+    <%= f.input :caption %>
+<% end %>
