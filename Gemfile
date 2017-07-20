@@ -26,8 +26,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "paperclip", "~> 5.0.0"
 # Simple-form for forms
 gem 'simple_form'
-# bootstrap gem
+# Bootstrap gem
 gem 'bootstrap-sass', '~> 3.3.6'
+# For the icon
+gem 'font-awesome-sass'
+# User identification
+gem 'devise'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

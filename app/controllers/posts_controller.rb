@@ -8,7 +8,17 @@ class PostsController < ApplicationController
     end
     
     def create
-        @post = Post.create(post_params)
+        if @post = Post.create(post_params)
+            flash[:success] = "Successful Upload"
+            redirect_to posts_path
+        else
+            flash[:danger] = "Upload Failed"
+        end
+    end
+    
+    def destroy  
+        @post = Post.find(params[:id])
+        @post.destroy
         redirect_to posts_path
     end
     
