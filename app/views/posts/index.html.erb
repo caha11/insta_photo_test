@@ -4,8 +4,17 @@
             <div class="post">
                 <div class="post-head">
                     <div class="name">
-                        Manu Adina-Zada
+                        <% if post.user %>
+                            <%= post.user.user_name %>
+                        <% else %>
+                            Guest
+                        <% end %>
                     </div>
+                    <% if post.user %>
+                        <% if post.user.id == current_user.id %>
+                            <%= link_to "Edit Post", edit_post_path(@post), class: 'text-center, edit-links' %>
+                        <% end %>
+                    <% end %>
                 </div>
             </div>
             
@@ -15,6 +24,8 @@
             <p class="caption">
                 <%= post.caption %>
             </p>
+            
+            
         </div>
     </div>
 <% end %>

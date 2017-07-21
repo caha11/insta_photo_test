@@ -32,6 +32,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-sass'
 # User identification
 gem 'devise'
+gem 'hirb'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
