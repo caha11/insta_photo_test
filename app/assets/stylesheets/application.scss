@@ -47,30 +47,21 @@ body {
   border-style: solid;
   border-radius: 3px;
   border-width: 1px;
-}
-
-.post-head {
-  height: 64px;
-  padding: 14px 20px;
-  color: #125688;
-  font-size: 15px;
-  line-height: 18px;
-  .thumbnail {}
-  .name {
-    display: block;
+  .post-head {
+    height: 40px;
+    padding: 14px 20px;
+    color: #125688;
+    font-size: 15px;
+    line-height: 18px;
+    .name {
+      display: block;
+    }
   }
 }
 
 .image {
   border-bottom: 1px solid #eeefef;
   border-top: 1px solid #eeefef;
-}
-
-.caption {
-  padding: 24px 24px;
-  font-size: 15px;
-  line-height: 18px;
-
 }
 
 .form-wrapper {
@@ -82,7 +73,40 @@ body {
   border-radius: 3px;
 }
 
-.edit-links {
-  margin-top: 20px;
-  margin-bottom: 40px;
+.post-bottom {
+
+  .user-name, .comment-content, .delete-comment {
+    display: inline;
+  }
+
+  .delete-post {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 3px solid #eeefef;
+  }
+
+  .caption {
+    padding: 10px;
+    border-bottom: 3px solid #eeefef;
+  }
+  
+  .comment {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    .user-name {
+      font-weight: 500;
+      margin-right: 0.3em;
+      color: #125688;
+    }
+    .delete-comment {
+      float: right;
+      display: inline;
+      color: #515151;
+    }
+  }
+  
+  margin-bottom: 7px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  line-height: 18px;
 }
